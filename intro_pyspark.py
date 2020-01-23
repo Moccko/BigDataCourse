@@ -49,8 +49,8 @@ with open("data/clean_cities.json", "w") as fw:
         fw.write(json.dumps(city) + "\n")
 
 # Display stats
-summary = Statistics.colStats(rddStr)
-summary.stddev()
+# summary = Statistics.colStats(rddStr)
+# summary.stddev()
 
 adultRdd = sc.textFile("data/adult.data").cache()
 
@@ -93,7 +93,7 @@ def persist(adult):
             adult,
         )
     )
-    print(http.post("http://localhost:9200/adults/_doc", json=adult).status_code)
+    # print(http.post("http://localhost:9200/adults/_doc", json=adult).status_code)
     return adult
 
 
