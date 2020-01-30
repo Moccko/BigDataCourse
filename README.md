@@ -1,4 +1,5 @@
 # Rendu Analyse et visualisation de données
+**Par Antoine LOIZEL, Younès GHENNAM, Mohamed Amin MALLEK & Roman RIEUNIER**
 
 Ce projet est constitué de 3 fichiers permettant de lancer la récupération, le traitement et la persistance de données dans un cluster ElasticSearch.
 
@@ -25,3 +26,4 @@ Vous pouvez spécifier une taille de batch pour l'envoi à ElasticSearch, exempl
 
 `python3 bikes_persistance.py 5000`
 
+Vous pouvez ajouter les données à votre cluster Kibana depuis ElasticSearch et créer un index pattern, ou vous connecter à celui qui vous a été envoyé.
